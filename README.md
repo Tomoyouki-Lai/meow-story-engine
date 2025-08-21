@@ -1,34 +1,33 @@
-[English](README.md) | [繁中](readmes/README.zh-Hant.md) | [简中](readmes/README.zh-Hans.md) | [日本語](readmes/README.ja.md) | [한국어](readmes/README.ko.md)
+[English](README.md) | [Español](readmes/README.es.md) | [繁中](readmes/README.zh-Hant.md) | [简中](readmes/README.zh-Hans.md) | [日本語](readmes/README.ja.md) | [한국어](readmes/README.ko.md)
 
 # Meow Story Engine
-
-**Meow Story Engine** 是一個極輕量化的概念驗證互動小說引擎，專為 **AI 生成「卡片式章節 + 多結局」** 的養成/故事遊戲設計。  
-遊戲腳本使用 **JSON 檔案** 定義，方便 LLM 編寫劇情。
-
----
-
-## 特點
-
-- 📖 **卡片式事件**：每章節由 16 張事件卡組成  
-- 🔀 **多重結局**：4 種普通結局 + 1 種隱藏結局  
-- 🎭 **分支互動**：玩家選擇會影響故事走向  
-- 🎒 **資源系統**：支援體力 / 飽食 / 精力等數值管理  
-- 🌟 **隱藏路線**：特定條件觸發支線劇情  
+**Meow Story Engine** is an extremely lightweight, proof-of-concept interactive fiction engine designed for **AI-generated "card-based chapters + multiple endings"** simulation/story games.
+The game script is defined using **JSON files**, making it easy for LLMs to write the plot.
 
 ---
 
-## 使用方式
+## Features
 
-1. Clone 本專案：
+- 📖 **Card-based Events**: Each chapter consists of 16 event cards.
+- 🔀 **Multiple Endings**: 4 normal endings + 1 hidden ending.
+- 🎭 **Branching Interactions**: Player choices affect the story's direction.
+- 🎒 **Resource System**: Supports management of stats like stamina / satiety / energy.
+- 🌟 **Hidden Routes**: Specific conditions trigger side plots.
+
+---
+
+## How to Use
+
+1. Clone this project:
    ```bash
-   git clone https://github.com/yourname/meow-story-engine.git
+   git clone https://github.com/Tomoyouki-Lai/meow-story-engine.git
    cd meow-story-engine
-2. 開啟 index.html（本地瀏覽器即可執行）。
-3. 修改 story.json 與 friends.json 來自訂劇情與好友互動。
+2. Open index.html (can be run in a local browser).
+3. Modify story.json and friends.json to customize the plot and friend interactions.
 
 ---
 
-## 專案結構
+## Project Structure
 
 ```
 meow-story-engin/
@@ -49,39 +48,39 @@ meow-story-engin/
 ```
 ---
 
-## Story JSON 範例
+## Story JSON Example
 
 ```
 {
-  "chapter": "Chapter 1 入學典禮",
+  "chapter": "Chapter 1 The Entrance Ceremony",
   "cards": [
     {
       "id": "c1",
-      "text": "喵娘告別父母，踏上前往學校的電車。",
+      "text": "Meow-chan bids farewell to her parents and gets on the train to school.",
       "choices": [
-        { "text": "望向窗外風景", "next": "c2" },
-        { "text": "低頭思考未來", "next": "c3" }
+        { "text": "Look at the scenery outside the window", "next": "c2" },
+        { "text": "Lower head and think about the future", "next": "c3" }
       ]
     }
   ],
   "endings": [
-    { "id": "e1", "title": "普通結局 A", "text": "平凡的一天結束了。" },
-    { "id": "h1", "title": "隱藏結局", "text": "喵娘發現了全新的冒險！" }
+    { "id": "e1", "title": "Normal Ending A", "text": "An ordinary day has ended." },
+    { "id": "h1", "title": "Hidden Ending", "text": "Meow-chan discovered a brand new adventure!" }
   ]
 }
 ```
 
 ---
 
-## 貢獻
+## Contributing
 
-歡迎透過 Pull Request 貢獻：
-- 新的故事 JSON（章節 / 劇本）
-- 新的功能（UI、資源管理、劇本生成、動畫生成）
-- Bug 修正
+Contributions via Pull Requests are welcome:
+- New story JSON (chapters / scripts)
+- New features (UI, resource management, script generation, animation generation)
+- Bug fixes
 
 ---
 
-## 授權
+## License
 
-本專案採用 Apache-2.0 License。
+This project is licensed under the Apache-2.0 License.
