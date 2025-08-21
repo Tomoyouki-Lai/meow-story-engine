@@ -28,7 +28,6 @@
 
 ## 專案結構
 
-```bash
 meow-story-engine/
 ├── index.html        # 主入口
 ├── style.css         # 基本樣式
@@ -36,7 +35,7 @@ meow-story-engine/
 ├── friends.json      # 朋友系統
 ├── imgs/             # 角色與事件圖片
 └── README.md
-```bash
+
 ---
 
 ## Story JSON 範例
@@ -59,7 +58,7 @@ meow-story-engine/
     { "id": "h1", "title": "隱藏結局", "text": "喵娘發現了全新的冒險！" }
   ]
 }
-``json
+
 ---
 
 ## 貢獻
