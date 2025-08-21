@@ -21,7 +21,7 @@
 
 1. Clone 本專案：
    ```bash
-   git clone https://github.com/yourname/meow-story-engine.git
+   git clone https://github.com/Tomoyouki-Lai/meow-story-engine.git
    cd meow-story-engine
 2. 開啟 index.html（本地瀏覽器即可執行）。
 3. 修改 story.json 與 friends.json 來自訂劇情與好友互動。
