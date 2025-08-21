@@ -1,4 +1,4 @@
-[English](README.md) | [Español](readmes/README.es.md) | [繁中](readmes/README.zh-Hant.md) | [简中](readmes/README.zh-Hans.md) | [日本語](readmes/README.ja.md) | [한국어](readmes/README.ko.md)
+[English](../README.md) | [Español](README.es.md) | [繁中](README.zh-Hant.md) | [简中](README.zh-Hans.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
 
 # Meow Story Engine
 **Meow Story Engine** is an extremely lightweight, proof-of-concept interactive fiction engine designed for **AI-generated "card-based chapters + multiple endings"** simulation/story games.
