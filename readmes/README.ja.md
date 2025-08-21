@@ -6,28 +6,28 @@
 
 ---
 
-## 特點
+## 特徴
 
-- 📖 **卡片式事件**：每章節由 16 張事件卡組成  
-- 🔀 **多重結局**：4 種普通結局 + 1 種隱藏結局  
-- 🎭 **分支互動**：玩家選擇會影響故事走向  
-- 🎒 **資源系統**：支援體力 / 飽食 / 精力等數值管理  
-- 🌟 **隱藏路線**：特定條件觸發支線劇情  
+- 📖 **カード形式のイベント**：各章は16枚のイベントカードで構成
+- 🔀 **マルチエンディング**：4つの通常エンディング＋1つの隠しエンディング
+- 🎭 **選択肢による分岐**：プレイヤーの選択が物語の行方を左右する
+- 🎒 **リソースシステム**：体力・満腹度・気力などのステータス管理に対応
+- 🌟 **隠しルート**：特定の条件でサイドストーリーが解放される
 
 ---
 
-## 使用方式
+## 使い方
 
-1. Clone 本專案：
+1. このリポジトリをクローンします：
    ```bash
    git clone https://github.com/Tomoyouki-Lai/meow-story-engine.git
    cd meow-story-engine
-2. 開啟 index.html（本地瀏覽器即可執行）。
-3. 修改 story.json 與 friends.json 來自訂劇情與好友互動。
+2. index.htmlをブラウザで開きます（ローカル環境でOK）。
+3. story.jsonとfriends.jsonを編集して、オリジナルのストーリーや友達との交流を作ってみましょう。
 
 ---
 
-## 專案結構
+## プロジェクト構成
 
 ```
 meow-story-engin/
@@ -38,49 +38,49 @@ meow-story-engin/
 └── /stories
     └── /story 1
         └── /chapter 1
-            ├── story.json          (Story data)
-            ├── /imgs/              (For event images, endings, logos, etc.)
+            ├── story.json          (ストーリーデータ)
+            ├── /imgs/              (イベントCG、エンディング、ロゴなどの画像)
             │   ├── cover.png
             │   └── ending.png
-            └── /npc_imgs/          (For all character/NPC portraits)
+            └── /npc_imgs/          (キャラクターやNPCの立ち絵)
                 ├── player-male.png
                 └── player-female.png
 ```
 ---
 
-## Story JSON 範例
+## Story JSON のサンプル
 
 ```
 {
-  "chapter": "Chapter 1 入學典禮",
+  "chapter": "チャプター1 入学式",
   "cards": [
     {
       "id": "c1",
-      "text": "喵娘告別父母，踏上前往學校的電車。",
+      "text": "にゃんこちゃんは両親に別れを告げ、学校へ向かう電車に乗り込んだ。",
       "choices": [
-        { "text": "望向窗外風景", "next": "c2" },
-        { "text": "低頭思考未來", "next": "c3" }
+        { "text": "窓の外の景色を眺める", "next": "c2" },
+        { "text": "うつむいて未来について考える", "next": "c3" }
       ]
     }
   ],
   "endings": [
-    { "id": "e1", "title": "普通結局 A", "text": "平凡的一天結束了。" },
-    { "id": "h1", "title": "隱藏結局", "text": "喵娘發現了全新的冒險！" }
+    { "id": "e1", "title": "通常エンディングA", "text": "平凡な一日が終わった。" },
+    { "id": "h1", "title": "隠しエンディング", "text": "にゃんこちゃんは新たな冒険を発見した！" }
   ]
 }
 ```
 
 ---
 
-## 貢獻
+## コントリビュート
 
-歡迎透過 Pull Request 貢獻：
-- 新的故事 JSON（章節 / 劇本）
-- 新的功能（UI、資源管理、劇本生成、動畫生成）
-- Bug 修正
+プルリクエスト（Pull Request）でのコントリビュート、大歓迎です！
+- 新しいストーリーJSON（章・シナリオ）
+- 新機能（UI、リソース管理、シナリオ生成、アニメーション生成など）
+- バグ修正
 
 ---
 
-## 授權
+## ライセンス
 
-本專案採用 Apache-2.0 License。
+このプロジェクトは Apache-2.0 ライセンス の下で公開されています。
