@@ -1,6 +1,6 @@
 [English](../README.md) | [Español](README.es.md) | [繁中](README.zh-Hant.md) | [简中](README.zh-Hans.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
 
-# 喵物语引擎
+# 喵物语引擎 (Meow Story Engine)
 
 **喵物语引擎** 是一个极轻量级的概念验证互动小说引擎，专为 **AI 生成“卡片式章节 + 多结局”** 的养成/故事游戏设计。
 游戏脚本使用 **JSON 文件** 定义，方便大语言模型（LLM）编写剧情。
