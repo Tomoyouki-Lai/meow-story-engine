@@ -23,7 +23,7 @@
     { "id":"d16","img":"./imgs/16_final_gaze.png","title":"The Final Gaze","text":"On the seventh day, it looks at you quietly, waiting for an answer.","options":[{"text":"Embrace it","effect":"happy+4"},{"text":"Give it one last meal","effect":"food+2"},{"text":"Keep your distance, watch the stars","effect":"energy+2"}],"hint":{"speaker":"Mommy","text":"This moment decides the future."}}
   ],
   "endings": [
-    { "id":"end_true","img":"./imgs/21_miracle_incarnate.png","title":"Miracle Incarnate","condition":"happy>=20 && food>=5 && energy>=5","text":"Under the moonlight, it transforms into a gentle cat girl and smiles at you, 'Let's continue our journey together.'"},
+    { "id":"end_true","img":"./imgs/21_miracle_incarnate.png","title":"Miracle Incarnate","condition":"happy>=20 && food>=5 && energy>=5","text":"Under the moonlight, it transforms into a gentle cat girl and smiles at you, 'Let's continue our journey together.'", "unlocks": "meow_story/school_ceremony" },
     { "id":"end_care","img":"./imgs/17_gentle_companion.png","title":"Gentle Companion","condition":"happy>=16 && food>=3","text":"It becomes a part of your daily life, nestling by your side peacefully."},
     { "id":"end_foodie","img":"./imgs/18_gourmet_cat.png","title":"Gourmet Cat","condition":"food>12 && happy<12","text":"It becomes quite the foodie and a famous chubby cat in town. Everyone comes to share snacks with it."},
     { "id":"end_lost","img":"./imgs/19_missed_connection.png","title":"Missed Connection","condition":"happy<8","text":"Due to a lack of connection, it disappears around the corner, leaving an empty space in your memories."},
