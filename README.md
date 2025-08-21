@@ -4,7 +4,7 @@
 **Meow Story Engine** is an extremely lightweight, proof-of-concept interactive fiction engine designed for **AI-generated "card-based chapters + multiple endings"** simulation/story games.
 The game script is defined using **JSON files**, making it easy for LLMs to write the plot.
 
-👉 Play the demo game [**“Meow Story”**](https://meow-story-engine.vercel.app/){:target="_blank" rel="noopener"}
+👉 Play the demo game [**“Meow Story”**](https://meow-story-engine.vercel.app/)
 
 ---
 
