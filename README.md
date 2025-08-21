@@ -1,3 +1,5 @@
+[English](README.md) | [繁中](readmes/README.zh-Hant.md) | [简中](readmes/README.zh-Hans.md) | [日本語](readmes/README.ja.md) | [한국어](readmes/README.ko.md)
+
 # Meow Story Engine
 
 **Meow Story Engine** 是一個極輕量化的概念驗證互動小說引擎，專為 **AI 生成「卡片式章節 + 多結局」** 的養成/故事遊戲設計。  
