@@ -1,8 +1,11 @@
 [English](../README.md) | [Español](README.es.md) | [繁中](README.zh-Hant.md) | [简中](README.zh-Hans.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
 
 # にゃんこ物語エンジン (Meow Story Engine)
+
 **にゃんこ物語エンジン**は、**AIによる「カード形式の章＋マルチエンディング」**の育成・物語ゲーム向けに設計された、超軽量な概念実証（PoC）ノベルゲームエンジンです。
 ゲームのシナリオは**JSON**ファイルで定義するため、LLMがストーリーを簡単に作成できます。
+
+👉 「Meow Story」デモゲームを遊ぶ
 
 ---
 
