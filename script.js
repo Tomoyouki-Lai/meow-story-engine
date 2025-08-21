@@ -63,11 +63,10 @@ async function loadStoryFile(filePath){
     return await res.json();
   }catch(e){
     console.error(e);
-    throw e; // 將錯誤拋出，讓 startGame 捕捉
+    throw e;
   }
 }
 
-// 【核心修改】使用 try...catch 捕捉載入錯誤
 async function startGame(storyIdentifier){
   if (!storyIdentifier) return;
   
@@ -90,20 +89,18 @@ async function startGame(storyIdentifier){
     }
     render();
   } catch (e) {
-    // 【安全裝置】如果載入失敗，則顯示「未完待續」畫面
     showToBeContinued(storyIdentifier);
   }
 }
 
-// 【新增】「未完待續」的專用顯示函式
 function showToBeContinued(storyIdentifier) {
-    story = null; // 清空當前故事，防止意外操作
-    state = null; // 清空狀態
+    story = null;
+    state = null;
     
     document.getElementById('img').innerHTML = '⏳';
-    document.getElementById('title').textContent = "冒險即將啟程";
-    document.getElementById('text').textContent = `「${storyIdentifier}」的故事仍在編寫中，敬請期待下一章的更新！\n(The story of "${storyIdentifier}" is yet to come. To be continued...)`;
-    document.getElementById('hint').textContent = "你可以從上方選單選擇其他已解鎖的故事。";
+    document.getElementById('title').textContent = "The adventure is about to begin";
+    document.getElementById('text').textContent = `The story of「${storyIdentifier}」is still being written. Please look forward to the next chapter!！\n(The story of "${storyIdentifier}" is yet to come. To be continued...)`;
+    document.getElementById('hint').textContent = "You can select other unlocked stories from the menu above.";
     document.getElementById('choices').innerHTML = '';
     document.getElementById('friendsPanel').innerHTML = '';
     document.getElementById('statsList').innerHTML = '';
@@ -145,7 +142,6 @@ function render(){
   updateUI();
 }
 
-// 【核心修改】處理解鎖邏輯和新按鈕
 function showEnding(){
   const ed = evalEnding();
   if (!ed) {
@@ -153,18 +149,17 @@ function showEnding(){
       return;
   }
   
-  // 處理按鈕的顯示/隱藏
   const continueBtn = document.getElementById('continueToNext');
   if (ed.unlocks) {
-    unlockStory(ed.unlocks); // 先解鎖，讓玩家看到下拉選單的變化
-    continueBtn.style.display = ''; // 顯示按鈕
+    unlockStory(ed.unlocks);
+    continueBtn.style.display = '';
     continueBtn.onclick = () => {
         document.getElementById('endingMask').style.display = 'none';
-        storySelect.value = ed.unlocks; // 自動切換下拉選單
+        storySelect.value = ed.unlocks;
         startGame(ed.unlocks);
     };
   } else {
-    continueBtn.style.display = 'none'; // 隱藏按鈕
+    continueBtn.style.display = 'none';
   }
 
   const modal = document.querySelector('#endingMask .modal');
@@ -209,8 +204,6 @@ function handleChoice(opt, anchor){
   save(currentStoryIdentifier);
   render();
 }
-
-// --- 以下為無需修改的輔助函式，保持原樣 ---
 
 function createPlayerCard(player, isRemovable) {
     const card = document.createElement('div');
