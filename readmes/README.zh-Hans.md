@@ -39,11 +39,11 @@ meow-story-engin/
 └── /stories
     └── /story 1
         └── /chapter 1
-            ├── story.json          (故事数据)
+            ├── story.json          (故事腳本)
             ├── /imgs/              (用于事件图片、结局、Logo等)
             │   ├── cover.png
             │   └── ending.png
-            └── /npc_imgs/          (用于所有角色/NPC立绘)
+            └── /npc_imgs/          (用于所有角色/NPC图片)
                 ├── player-male.png
                 └── player-female.png
 ```
