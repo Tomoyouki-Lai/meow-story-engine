@@ -28,8 +28,7 @@
 
 ## 專案結構
 
-```bash
-meow-story-engine/
+```bashmeow-story-engine/
 ├── index.html        # 主入口
 ├── style.css         # 基本樣式
 ├── story.json        # 劇情檔案（卡片事件）
