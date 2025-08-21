@@ -1,6 +1,6 @@
 [English](../README.md) | [Español](README.es.md) | [繁中](README.zh-Hant.md) | [简中](README.zh-Hans.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
 
-# Meow Story Engine
+# 喵物語引擎
 
 **Meow Story Engine** 是一個極輕量化的概念驗證互動小說引擎，專為 **AI 生成「卡片式章節 + 多結局」** 的養成/故事遊戲設計。  
 遊戲腳本使用 **JSON 檔案** 定義，方便 LLM 編寫劇情。
