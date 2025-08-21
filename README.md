@@ -36,7 +36,7 @@ meow-story-engine/
 ├── friends.json      # 朋友系統
 ├── imgs/             # 角色與事件圖片
 └── README.md
-
+```
 ---
 
 ## Story JSON 範例
@@ -59,6 +59,7 @@ meow-story-engine/
     { "id": "h1", "title": "隱藏結局", "text": "喵娘發現了全新的冒險！" }
   ]
 }
+```
 
 ---
 
