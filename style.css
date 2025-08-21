@@ -1,0 +1,325 @@
+:root {
+    --bg1: #ffe9d8;
+    --bg2: #fff7ef;
+    --card: #fff;
+    --muted: #6b6b6b;
+    --accent: #ffb347;
+    --line: #222;
+}
+* {
+    box-sizing: border-box
+}
+body {
+    margin: 0;
+    font-family: ui-rounded, system-ui, "PingFang TC", "Noto Sans TC", sans-serif;
+    background: linear-gradient(var(--bg1), var(--bg2));
+    color: var(--line);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.container {
+    width: min(980px, 96vw)
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    flex-wrap: wrap
+}
+.header h1 {
+    margin: 0;
+    font-size: 18px
+}
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 6px
+}
+select {
+    padding: 6px;
+    border-radius: 8px;
+    border: 2px solid var(--line)
+}
+.btn {
+    border: 2px solid var(--line);
+    background: var(--accent);
+    border-radius: 10px;
+    padding: 8px 10px;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 2px 3px 0 var(--line)
+}
+.btn.ghost {
+    background: transparent
+}
+.btn.small {
+    padding: 6px 8px;
+    font-size: 13px
+}
+.card {
+    background: var(--card);
+    border: 2px solid var(--line);
+    border-radius: 14px;
+    padding: 14px;
+    box-shadow: 3px 4px 0 var(--line)
+}
+.stage {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 14px;
+    align-items: start
+}
+.img {
+    border: 2px dashed #e6c3a0;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
+    font-size: 40px;
+    background: #fff4e8
+}
+.content .meta {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+.pill {
+    border: 2px solid var(--line);
+    background: #fff;
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-weight: 700;
+    font-size: 13px
+}
+.title {
+    font-weight: 900;
+    margin: 6px 0
+}
+.text {
+    line-height: 1.6;
+    margin: 6px 0
+}
+.hint {
+    font-size: 13px;
+    color: var(--muted);
+    display: block;
+    margin-top: 6px;
+    background: #fff9e6;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #f0e0c8;
+    min-height: 38px;
+}
+.choices {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px
+}
+.choice {
+    border: 2px solid var(--line);
+    background: #fff;
+    border-radius: 999px;
+    padding: 10px 14px;
+    font-weight: 800;
+    cursor: pointer
+}
+.gridLower {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 14px
+}
+.panel {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid #eee
+}
+.panelTitle {
+    font-weight: 800;
+    margin-bottom: 6px
+}
+.log {
+    max-height: 260px;
+    overflow: auto;
+    font-size: 14px;
+}
+.log-entry {
+    padding: 4px 0;
+    border-bottom: 1px dashed #f0f0f0;
+}
+.log-effect-tag {
+    background: #f1f1f1;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 12px;
+    margin-left: 6px;
+    font-weight: bold;
+}
+.stat {
+    padding: 6px 0;
+    border-bottom: 1px dashed #eee
+}
+.progress {
+    height: 12px;
+    background: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 6px
+}
+.progressFill {
+    height: 100%;
+    width: 0%;
+    background: #ffb6c1;
+    transition: width .4s
+}
+.unlock {
+    position: fixed;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff7d6;
+    border: 2px solid #ffcc00;
+    padding: 8px 14px;
+    border-radius: 12px;
+    font-weight: 900;
+    display: none;
+    z-index: 999
+}
+.modalMask {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .35);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000
+}
+.modal {
+    background: #fff;
+    border: 2px solid var(--line);
+    border-radius: 12px;
+    box-shadow: 6px 8px 0 var(--line);
+    padding: 14px;
+    max-width: 760px
+}
+.statsRow {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+@media(max-width:860px) {
+    .stage {
+        grid-template-columns: 1fr
+    }
+    .img {
+        aspect-ratio: 1/1
+    }
+}
+.choice:disabled {
+    background: #f0f0f0;
+    color: #aaa;
+    cursor: not-allowed;
+    box-shadow: none;
+    border-color: #ddd;
+}
+select option:disabled {
+    color: #bbb;
+}
+#countdownTimer {
+    color: #999;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.friendsPanel {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+.friendCard, .emptySlot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background .2s;
+    position: relative;
+    width: 70px; /* 固定寬度以對齊 */
+    height: 120px; /* 固定高度以對齊 */
+}
+.friendCard:hover {
+    background: #fdf5ec;
+}
+.friendAvatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--line);
+    padding: 2px;
+    background: #fff;
+}
+.friendAvatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.friendName {
+    font-weight: 800;
+    font-size: 14px;
+}
+.friendStat {
+    font-size: 13px;
+    font-weight: 700;
+    background: #fff;
+    border: 2px solid var(--line);
+    border-radius: 99px;
+    padding: 2px 6px;
+    margin-top: 2px;
+}
+.btnDelete {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 18px;
+    height: 18px;
+    background: #ff6b6b;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity .2s;
+    z-index: 2;
+}
+.friendCard:hover .btnDelete {
+    opacity: 1;
+}
+.emptySlot {
+    border: 2px dashed #ccc;
+    justify-content: center;
+    color: #ccc;
+    font-size: 32px;
+    font-weight: bold;
+}
+.emptySlot:hover {
+    background: #f9f9f9;
+    color: #aaa;
+}
+#friendPoolContainer .friendCard {
+    width: auto; /* 在彈窗中自適應寬度 */
+    height: auto;
+}

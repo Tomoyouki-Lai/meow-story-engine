@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>🐾 Meow Story Engine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>🐾 Meow Story Engine</h1>
+      <div class="controls">
+        <label for="storySelect"></label>
+        <!-- 【核心修改】value 改为 "分类/故事文件夹名" 的格式 -->
+        <select id="storySelect">
+          <option value="meow_story/healing_kitten">Meow Story: A Healing Kitten</option>
+          <option value="meow_story/school_ceremony">Meow Story: School Ceremony</option>
+          <option value="meow_story/funny_daily">Meow Story: Funny Daily Life</option>
+          <!-- 未来可以这样添加: -->
+          <!-- <option value="dog_story/first_adventure">Dog Story: First Adventure</option> -->
+        </select>
+        <button id="btnLoad" class="btn">Load Story</button>
+        <button id="btnReset" class="btn ghost">Reset Progress</button>
+      </div>
+    </header>
+
+    <!-- ... 其余 HTML 结构保持不变 ... -->
+    <main class="card">
+      <section class="stage">
+        <div class="img" id="img">📦</div>
+        <div class="content">
+          <div class="meta">
+            <div class="pill">Day <span id="dayNow">1</span>/<span id="dayTotal">—</span></div>
+            <div id="turnsPill" class="pill">Turns Left: <strong id="turnsCount">0</strong> <span id="countdownTimer"></span></div>
+            <div class="pill">Unlocked: <span id="seenPct">0%</span></div>
+          </div>
+          <h2 id="title">Welcome!</h2>
+          <p id="text" class="text">Please select a story from the top menu and click "Load Story" to begin your adventure.</p>
+          <p id="hint" class="hint">Your journey awaits...</p>
+          <div id="choices" class="choices"></div>
+        </div>
+      </section>
+      <section class="gridLower">
+        <div id="friendsPanel" class="panel friendsPanel"></div>
+        <div class="panel">
+          <div class="panelTitle">Journal / Log</div>
+          <div id="log" class="log"></div>
+        </div>
+        <aside class="panel">
+          <div class="panelTitle">Status</div>
+          <div id="statsList"></div>
+          <div style="margin-top:12px">
+            <div class="panelTitle">Journal Collection</div>
+            <div class="progress"><div id="progressBar" class="progressFill"></div></div>
+            <div id="progressText" style="font-size:13px;margin-top:6px;color:#666">0 / 0</div>
+          </div>
+          <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+            <button id="btnReplay" class="btn">Play Again</button>
+            <button id="btnDownload" class="btn ghost">Download Journal</button>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <div id="unlock" class="unlock">✨ New Event Unlocked!</div>
+    <div id="endingMask" class="modalMask">
+      <div class="modal">
+        <h3 id="endTitle">Ending</h3>
+        <p id="endText"></p>
+        <div class="statsRow"></div>
+        <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+          <button id="closeEnd" class="btn">Close</button>
+          <button id="replayFromEnd" class="btn ghost">Play Again</button>
+          <button id="continueToNext" class="btn" style="display: none;">Continue Journey</button>
+        </div>
+      </div>
+    </div>
+    <div id="friendSelectMask" class="modalMask">
+      <div class="modal">
+        <h3>Manage Friends</h3>
+        <p>Select a friend to add to your active party.</p>
+        <div id="friendPoolContainer" class="friendsPanel"></div>
+        <div style="margin-top:12px">
+          <button id="closeFriendSelect" class="btn ghost">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
