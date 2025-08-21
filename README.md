@@ -31,13 +31,21 @@
 ## 專案結構
 
 ```
-meow-story-engine/
-├── index.html        # 主入口
-├── style.css         # 基本樣式
-├── story.json        # 劇情檔案（卡片事件）
-├── friends.json      # 朋友系統
-├── imgs/             # 角色與事件圖片
-└── README.md
+meow-story-engin/
+├── index.html
+├── script.js
+├── style.css
+│
+└── /stories
+    └── /story 1
+        └── /chapter 1
+            ├── story.json          (Story data)
+            ├── /imgs/              (For event images, endings, logos, etc.)
+            │   ├── cover.png
+            │   └── ending.png
+            └── /npc_imgs/          (For all character/NPC portraits)
+                ├── player-male.png
+                └── player-female.png
 ```
 ---
 
