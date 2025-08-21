@@ -28,7 +28,7 @@
 
 ## 專案結構
 
-```code
+<code>
 meow-story-engine/
 ├── index.html        # 主入口
 ├── style.css         # 基本樣式
@@ -36,7 +36,7 @@ meow-story-engine/
 ├── friends.json      # 朋友系統
 ├── imgs/             # 角色與事件圖片
 └── README.md
-
+```</code>
 ---
 
 ## Story JSON 範例
