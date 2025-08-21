@@ -5,7 +5,7 @@
 **Meow Story Engine** es un motor de ficción interactiva de prueba de concepto extremadamente ligero, diseñado para juegos de simulación/historia **generados por IA con "capítulos basados en cartas + múltiples finales"**.
 El guion del juego se define mediante **archivos JSON**, lo que facilita que los LLMs escriban la trama.
 
-👉 Juega la demo de “Meow Story”
+👉 Juega la demo de [**“Meow Story”**](https://meow-story-engine.vercel.app/)
 
 ---
 
