@@ -28,6 +28,7 @@
 
 ## 專案結構
 
+```
 meow-story-engine/
 ├── index.html        # 主入口
 ├── style.css         # 基本樣式
@@ -40,7 +41,7 @@ meow-story-engine/
 
 ## Story JSON 範例
 
-```json
+```
 {
   "chapter": "Chapter 1 入學典禮",
   "cards": [
