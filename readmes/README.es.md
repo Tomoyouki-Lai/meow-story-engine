@@ -1,11 +1,11 @@
 [English](../README.md) | [Español](README.es.md) | [繁中](README.zh-Hant.md) | [简中](README.zh-Hans.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
 
 # Meow Story Engine
-**Meow Story Engine** is an extremely lightweight, proof-of-concept interactive fiction engine designed for **AI-generated "card-based chapters + multiple endings"** simulation/story games.
-The game script is defined using **JSON files**, making it easy for LLMs to write the plot.
 
 **Meow Story Engine** es un motor de ficción interactiva de prueba de concepto extremadamente ligero, diseñado para juegos de simulación/historia **generados por IA con "capítulos basados en cartas + múltiples finales"**.
 El guion del juego se define mediante **archivos JSON**, lo que facilita que los LLMs escriban la trama.
+
+👉 Juega la demo de “Meow Story”
 
 ---
 
