@@ -39,12 +39,8 @@ meow-story-engin/
     └── /story 1
         └── /chapter 1
             ├── story.json          (스토리 데이터)
-            ├── /imgs/              (이벤트, 엔딩, 로고 등 이미지)
-            │   ├── cover.png
-            │   └── ending.png
-            └── /npc_imgs/          (모든 캐릭터/NPC 이미지)
-                ├── player-male.png
-                └── player-female.png
+            ├── /imgs               (이벤트, 엔딩, 로고 등 이미지)
+            /npc_imgs               (모든 캐릭터/NPC 이미지)
 ```
 ---
 
