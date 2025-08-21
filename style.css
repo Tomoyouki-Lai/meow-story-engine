@@ -254,8 +254,8 @@ select option:disabled {
     cursor: pointer;
     transition: background .2s;
     position: relative;
-    width: 70px; /* 固定寬度以對齊 */
-    height: 120px; /* 固定高度以對齊 */
+    width: 70px;
+    height: 120px;
 }
 .friendCard:hover {
     background: #fdf5ec;
