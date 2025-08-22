@@ -9,6 +9,10 @@
 
 ---
 
+![Image](https://github.com/user-attachments/assets/0478ddb9-d45a-428a-b7fe-3fda3c51733a)
+
+---
+
 ## 特性
 
 - 📖 **卡片式事件**：每章节由 16 张事件卡组成
