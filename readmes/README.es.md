@@ -9,6 +9,10 @@ El guion del juego se define mediante **archivos JSON**, lo que facilita que los
 
 ---
 
+![Image](https://github.com/user-attachments/assets/0478ddb9-d45a-428a-b7fe-3fda3c51733a)
+
+---
+
 ## Características
 
 - 📖 **Eventos basados en cartas**: Cada capítulo consta de 16 cartas de evento.
