@@ -6,6 +6,8 @@ The game script is defined using **JSON files**, making it easy for LLMs to writ
 
 👉 Play the demo game [**“Meow Story”**](https://meow-story-engine.vercel.app/)
 
+![Image](https://github.com/user-attachments/assets/0478ddb9-d45a-428a-b7fe-3fda3c51733a)
+
 ---
 
 ## Features
